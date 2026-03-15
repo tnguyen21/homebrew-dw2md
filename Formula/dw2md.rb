@@ -1,22 +1,22 @@
 class Dw2md < Formula
   desc "Crawl a DeepWiki repository and compile all pages into markdown"
-  homepage "https://github.com/tnguyen21/dw2md"
-  version "0.2.1"
+  homepage "https://github.com/nwyin/dw2md"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/tnguyen21/dw2md/releases/download/v0.2.1/dw2md-macos-aarch64"
-      sha256 "b75475d5e61882dc48789311a71a7a9c3a37b50ba0e0f1c6c7b21374361ff4a8"
+      url "https://github.com/nwyin/dw2md/releases/download/v0.2.3/dw2md-macos-aarch64"
+      sha256 "b3e978d3cc8ae3cf08091af5a72aaab70d293f0dac5107e82334e0425ac20c6a"
     else
-      url "https://github.com/tnguyen21/dw2md/releases/download/v0.2.1/dw2md-macos-x86_64"
-      sha256 "c95389501df59c9890f323d3b8a9170670066ad717e977bcce647a2476564866"
+      url "https://github.com/nwyin/dw2md/releases/download/v0.2.3/dw2md-macos-x86_64"
+      sha256 "b18a76ea0226a0d2c1ea6af6077a375b4eeddab576a490fc549e21cc2f118675"
     end
   end
 
   on_linux do
-    url "https://github.com/tnguyen21/dw2md/releases/download/v0.2.1/dw2md-linux-x86_64-musl"
-    sha256 "59e861daac87e056f7a6f48498c01cdcfc8b435c417426dc600ef80425dc942d"
+    url "https://github.com/nwyin/dw2md/releases/download/v0.2.3/dw2md-linux-x86_64-musl"
+    sha256 "cc8c4c2434c1be2b3679f214607f615435e53e19660db4bfa2ade494b0df153f"
   end
 
   def install
